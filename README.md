@@ -1,8 +1,24 @@
 # Telegram Travel Agent ✈️🤖
 
-The Telegram Travel Agent is a sophisticated Telegram bot designed to streamline travel planning by integrating with the Gemini language model and leveraging the Model Context Protocol (MCP) client architecture. It connects to multiple MCP servers to provide real-time travel-related services, including flight searches, accommodation bookings, trip planning, local event discovery, and destination exploration. The bot supports multilingual communication in English, Chinese, and Cantonese, ensuring accessibility for a diverse user base.
+The Telegram Travel Agent is a sophisticated Telegram bot designed to streamline travel planning by integrating with the Gemini and leveraging the Model Context Protocol (MCP) client architecture. It connects to multiple MCP servers to provide real-time travel-related services, including 
+- flight searches
+- accommodation bookings
+- trip planning
+- local event discovery
+- destination exploration. 
+- The bot supports multilingual communication in English, Chinese, and Cantonese, ensuring accessibility for a diverse user base.
 
-This project is ideal for travelers seeking a seamless, interactive experience to plan their trips directly through Telegram, with structured, user-friendly responses and robust backend integrations.
+
+## Use Cases
+
+The Telegram Travel Agent supports the following use cases (video demonstrations to be added):
+
+1. **Search Flight**: Find flights to a destination using the `flight-search-mcp` server.
+2. **Search Airbnb**: Discover Airbnb listings with the `airbnb-mcp-server`.
+3. **Search Hotel**: Book hotels via the `travel-agent-mcp-server`.
+4. **Trip Planning**: Get recommendations for restaurants and shops using various MCP tools.
+5. **Search Local Event and Destination Exploration**: Explore tourist spots and events with the `wikipedia-mcp` and `fetch_server`.
+
 
 ## Features
 
@@ -253,24 +269,22 @@ For all search-related results (hotels, Airbnb, flights), present the informatio
 """
 ```
 
-## Use Cases
-
-The Telegram Travel Agent supports the following use cases (video demonstrations to be added):
-
-1. **Search Flight**: Find flights to a destination using the `flight-search-mcp` server.
-2. **Search Airbnb**: Discover Airbnb listings with the `airbnb-mcp-server`.
-3. **Search Hotel**: Book hotels via the `travel-agent-mcp-server`.
-4. **Trip Planning**: Get recommendations for restaurants and shops using various MCP tools.
-5. **Search Local Event and Destination Exploration**: Explore tourist spots and events with the `wikipedia-mcp` and `fetch_server`.
-
 ## MCP Servers
 
-The following MCP servers, created by the project author, power the bot's functionality:
-- **Calculator MCP**: Calculates trip budgets. [GitHub](https://github.com/alan5543/calculator-mcp)
-- **Airbnb MCP Server**: Searches for Airbnb listings. [GitHub](https://github.com/alan5543/airbnb-mcp-server)
-- **Flight Search MCP**: Finds flight options. [GitHub](https://github.com/alan5543/Flight-Search-MCP)
-- **Travel Agent MCP Server**: Plans and books trips. [GitHub](https://github.com/alan5543/Travel-Agent-MCP-Server)
+The Telegram Travel Agent leverages a combination of custom-built and third-party Model Context Protocol (MCP) servers to power its travel-related functionalities. Below is a list of the MCP servers used, with credits to their respective developers:
 
+### Custom MCP Servers
+The following MCP servers were created by the project author to provide specialized travel services:
+- **Calculator MCP**: Calculates trip budgets, such as total costs for flights, hotels, and activities. [GitHub](https://github.com/alan5543/calculator-mcp)
+- **Airbnb MCP Server**: Searches for Airbnb listings at the user's specified destination. [GitHub](https://github.com/alan5543/airbnb-mcp-server)
+- **Flight Search MCP**: Finds flight options based on user-specified routes and preferences. [GitHub](https://github.com/alan5543/Flight-Search-MCP)
+- **Travel Agent MCP Server**: Handles comprehensive trip planning, including hotel bookings and itinerary creation. [GitHub](https://github.com/alan5543/Travel-Agent-MCP-Server)
+
+### Third-Party MCP Servers
+The project also integrates the following MCP servers developed by the open-source community, to whom we extend our gratitude for their contributions:
+- **Fetch Server**: Retrieves general web information to support travel queries, such as local attractions or events. [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)
+- **Wikipedia MCP**: Fetches detailed information about tourist spots and destinations from Wikipedia, enhancing destination exploration. [GitHub](https://github.com/Rudra-ravi/wikipedia-mcp)
+- **Sequential Thinking**: Enables sequential processing for complex travel queries, ensuring logical and structured responses. [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)
 
 
 ## License
