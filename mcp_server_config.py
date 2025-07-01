@@ -1,3 +1,5 @@
+import os
+
 # --- MCP Server Configuration ---
 mcp_server_configs = [
        {
@@ -9,8 +11,6 @@ mcp_server_configs = [
                 "@smithery/cli@latest", 
                 "run", 
                 "@alan5543/calculator-mcp", 
-                "--key", 
-                "67fb6904-152d-4682-9d6c-2024b713cbc3"
             ],
             "env": None
         },
@@ -23,8 +23,6 @@ mcp_server_configs = [
                 "@smithery/cli@latest", 
                 "run", 
                 "@alan5543/airbnb-mcp-server", 
-                "--key", 
-                "67fb6904-152d-4682-9d6c-2024b713cbc3"
             ],
             "env": None
         },
@@ -37,8 +35,6 @@ mcp_server_configs = [
                 "@smithery/cli@latest", 
                 "run", 
                 "@alan5543/flight-search-mcp", 
-                "--key", 
-                "67fb6904-152d-4682-9d6c-2024b713cbc3"
             ],
             "env": None
         },
@@ -51,12 +47,11 @@ mcp_server_configs = [
                 "@smithery/cli@latest",
                 "run",
                 "@alan5543/travel-agent-mcp-server",
-                "--key",
-                "67fb6904-152d-4682-9d6c-2024b713cbc3",
-                "--profile",
-                "fortunate-rat-l8LC43"
             ],
-            "env": None
+            "env": {
+                "SERP_API_KEY": os.getenv("SERP_API_KEY"),
+                "CURRENCYFREAKS_API_KEY": os.getenv("CURRENCYFREAKS_API_KEY")
+            }
         },
         {
             # MCP tool to fetch the information from the web
