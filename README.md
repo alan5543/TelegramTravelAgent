@@ -23,7 +23,16 @@ The Telegram Travel Agent supports the following use cases (video demonstrations
 ## Demo Video
 Click the thumbnail below to watch the demo video:
 
-[![Telegram Travel Agent Demo](https://img.youtube.com/vi/trWZnNzofPs/0.jpg)](https://www.youtube.com/watch?v=trWZnNzofPs)
+<table>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=trWZnNzofPs"><img src="https://img.youtube.com/vi/trWZnNzofPs/0.jpg" alt="Telegram Travel Agent Demo" width="320"></a>
+    </td>
+    <td>
+      <a href="https://t.me/TravgentBot"><img src="https://github.com/user-attachments/assets/05e82158-9f63-4dff-b167-feb65efcbaa5" alt="t_me-TravgentBot" width="320"></a>
+    </td>
+  </tr>
+</table>
 
 ## Features
 
