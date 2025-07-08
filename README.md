@@ -20,6 +20,11 @@ The Telegram Travel Agent supports the following use cases (video demonstrations
 5. **Search Local Event and Destination Exploration**: Explore tourist spots and events with the `wikipedia-mcp` and `fetch_server`.
 
 
+## Demo Video
+Click the thumbnail below to watch the demo video:
+
+[![Telegram Travel Agent Demo](https://img.youtube.com/vi/trWZnNzofPs/0.jpg)](https://www.youtube.com/watch?v=trWZnNzofPs)
+
 ## Features
 
 - **Multilingual Support**: Communicates fluently in English, Chinese, and Cantonese, automatically translating responses to match the user's language preference for consistency.
