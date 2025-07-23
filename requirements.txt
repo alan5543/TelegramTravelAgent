@@ -64,3 +64,4 @@ urllib3==2.5.0
 uvicorn==0.34.3
 websockets==15.0.1
 fastapi
+aiohttp>=3.12.13
