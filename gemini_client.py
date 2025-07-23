@@ -11,7 +11,7 @@ from io import BytesIO
 
 import os
 import tempfile
-from pylatex import Document, NoEscape
+# from pylatex import Document, NoEscape
 from google.api_core.exceptions import ResourceExhausted, ServiceUnavailable
 
 from config import GEMINI_API_KEY, GEMINI_MODEL, logger, MAX_TOOL_ITERATIONS
